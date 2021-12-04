@@ -14,5 +14,13 @@
     "nodemon": "^2.0.14"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebaspallero/OceanTrainingPrueba.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sebaspallero/OceanTrainingPrueba/issues"
+  },
+  "homepage": "https://github.com/Sebaspallero/OceanTrainingPrueba#readme",
   "description": ""
 }
