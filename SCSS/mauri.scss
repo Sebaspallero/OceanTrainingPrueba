@@ -1,0 +1,637 @@
+$azulIntenso: #032B3A;
+$amarillo: #FCC658;
+$celeste: #BFE1E3;
+$azulMarino: #0C6E9A;
+
+
+//Sección HERO------------------------------------------
+#hero{
+    width: 100%;
+    height: 770px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../assets/img/backgrounds/BG-1-PNG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media(min-width: 1200px){
+        height: 1000px;
+    }
+
+    #contenedorTitulo{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        position: absolute;
+        right: 20px;
+        margin: 30vh 50px;
+
+        h1{
+            color: $azulIntenso;
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            font-family: "creato-display-bold";
+            line-height: 60px;
+
+            @media (max-width: 699px) {
+                font-size: 1.6rem;
+                line-height: 40px;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            text-align: center;
+            color: $azulIntenso;
+            font-family: "creato-display-regular";
+            font-size: 1.2rem;
+            font-weight: 400;
+            background-color: $amarillo;
+            padding: 10px 30px;
+            margin: 15px 0px;
+            border: solid 1px $amarillo;
+            border-radius: 6px;
+
+            @media (min-width: 540px) and (max-width: 699px) {
+                font-size: 1rem;
+                padding: 8px 24px;
+            }
+
+            @media (max-width: 539px) {
+                font-size: 0.8rem;
+                padding: 6px 20px;
+            }
+        }
+    }
+}
+
+//Sección NOSOTROS------------------------------------------
+#sobreNosotros{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url("../assets/img/backgrounds/BG-2-PNG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+    #contenedorNosotros{
+        width: 90%;
+        margin: auto auto;
+
+        h2{
+            color: $azulIntenso;
+            font-size: 3rem;
+            text-align: left;
+            font-family: "creato-display-bold";
+            font-weight: 700;
+            margin: 20px;
+
+            @media (max-width: 699px) {
+                font-size: 2rem;
+            }
+        }
+
+        #datos{
+            background-color: $celeste;
+            border: solid 1px $celeste;
+            border-radius: 8px;
+            box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            margin: 5px;
+            padding: 10px;
+            
+
+            @media (max-width: 903px) {
+                height: fit-content;
+            }
+
+            @media (max-width: 699px) {
+                flex-direction: column;
+            }
+
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img{
+                    width: 18vw;
+                    height: auto;
+                    margin-top: 20px;
+
+                    @media (max-width: 699px) {
+                        width: 22vw;
+                    }
+                }
+
+                .valores{
+                    color: white;
+                    font-family: "creato-display-bold";
+                    font-weight: 700;
+                    font-size: 3rem;
+                    margin: 0;
+
+                    @media (max-width: 699px) {
+                        font-size: 2.4rem;
+                    }
+                }
+
+                .textoNosotros{
+                    font-family: "creato-display-regular";
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                    color: #18191F;
+                    text-align: center;
+                }
+            }
+        }
+
+        #textoInternoNosotrosBlack{
+            font-family: "creato-display-regular";
+            font-weight: 400;
+            font-size: 1.2rem;
+            word-spacing: 5px;
+            line-height: 64px;
+            width: 100%;
+            margin: 40px 20px;
+            color: black;
+        
+            @media (max-width: 903px) {
+                width: 90%;
+                margin: 40px auto;
+            }
+        
+            @media (max-width: 699px) {
+                font-size: 1rem;
+                line-height: 40px;
+            }
+        }
+    } 
+}
+
+//Sección DISCIPLINAS------------------------------------------
+#disciplinas{
+    width: 100%;
+    height: 1500px;
+    //padding: 50px;
+    background-image: url("../assets/img/backgrounds/BG-3-PNG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: 1400px){
+        height: 1850px;
+    }
+
+    @media (max-width: 1260px) {
+        height: 1950px;
+        background-image: url("../assets/img/backgrounds/BG-disciplinas-mobile.png");
+    }
+
+    @media (max-width: 1050px) {
+        height: 2800px;
+        background-image: url("../assets/img/backgrounds/BG-disciplinas-mobile.png");
+    }
+
+    h2{
+        font-size: 3rem;
+        text-align: center;
+        font-family: "creato-display-bold";
+        padding-top: 250px;
+        margin: 20px;
+        color: white;
+
+        @media (max-width: 699px) {
+            font-size: 2rem;
+            margin-top: 300px;
+            margin: 0px;
+        }
+
+        @media (max-width: 960px) {
+            padding-top: 350px;
+        }
+
+        @media (max-width: 500px) {
+            padding-top: 300px;
+        }
+    }
+
+    #contenedorDisciplinas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 20px;
+
+        .flipping-container{
+            width: 350px;
+            height: 344px;
+            perspective: 1000px;
+            margin: 10px 0px;
+
+            .card{
+                width: 100%;
+                height: 100%;
+                position: relative;
+    
+                .cardFront{
+                    width: 100%;
+                    height: 100%;
+                    background: #FFFFFF;
+                    box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+                    border-radius: 8px;
+                    margin: 10px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+        
+                    img{
+                        width: 20%;
+                        height: auto;
+                        margin: 25px 20px;
+                    }
+        
+                    h3{
+                        font-family: "creato-display-bold";
+                        font-weight: 700;
+                        font-size: 1.8rem;
+                        margin: 10px 20px;
+                        color: #18191F;
+                    }
+        
+                    p{
+                        font-family: "creato-display-regular";
+                        font-weight: 400;
+                        font-size: 0.8rem;
+                        line-height: 26px;
+                        color: #18191F;
+                        margin: 12px 15px;
+                    }
+        
+                    a{
+                        text-decoration: none;
+                        color: $azulMarino;
+                        margin: 8px 20px;
+                        cursor: pointer;
+                    }
+
+                    .cardVerMas{
+                        position: absolute;
+                        left: 0px;
+                        bottom: 4px;
+                    }
+                }
+
+                .cardBack1{
+                    width: 100%;
+                    height: 100%;
+                    background: #FFFFFF;
+                    box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+                    border-radius: 8px;
+                    margin: 10px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    display: none;
+
+
+                    i{
+                        width: 30px;
+                        margin: 0px;
+                        margin-left: 90%;
+                        cursor: pointer;
+                    }
+
+                    p{
+                        font-family: "creato-display-regular";
+                        font-style: italic;
+                        text-align: center;
+                        font-size: 1.1rem;
+                        margin: 0px 10px;
+                        color: $azulMarino;
+
+                        @media (min-width: 430px) and (max-width: 500px) {
+                            font-size: 1.2rem;
+                        }
+
+                        @media (max-width: 429px) {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                .cardBack2{
+                    width: 100%;
+                    height: 100%;
+                    background: #FFFFFF;
+                    box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+                    border-radius: 8px;
+                    margin: 10px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    display: none;
+
+
+                    i{
+                        width: 30px;
+                        margin: 0px;
+                        margin-left: 90%;
+                        cursor: pointer;
+                    }
+
+                    p{
+                        font-family: "creato-display-regular";
+                        font-style: italic;
+                        text-align: center;
+                        font-size: 1.1rem;
+                        margin: 0px 10px;
+                        color: $azulMarino;
+
+                        @media (min-width: 430px) and (max-width: 500px) {
+                            font-size: 1.2rem;
+                        }
+
+                        @media (max-width: 429px) {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                .cardBack3{
+                    width: 100%;
+                    height: 100%;
+                    background: #FFFFFF;
+                    box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+                    border-radius: 8px;
+                    margin: 10px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    display: none;
+
+
+                    i{
+                        width: 30px;
+                        margin: 0px;
+                        margin-left: 90%;
+                        cursor: pointer;
+                    }
+
+                    p{
+                        font-family: "creato-display-regular";
+                        font-style: italic;
+                        text-align: center;
+                        font-size: 1.1rem;
+                        margin: 0px 10px;
+                        color: $azulMarino;
+
+                        @media (min-width: 430px) and (max-width: 500px) {
+                            font-size: 1.2rem;
+                        }
+
+                        @media (max-width: 429px) {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+
+    .textoInternoNosotrosWhite{
+        font-family: "creato-display-regular";
+        font-weight: 400;
+        font-size: 1.2rem;
+        word-spacing: 5px;
+        line-height: 64px;
+        margin: 40px 20px;
+        margin-left: 4em;
+        color: white;
+        padding-bottom: 0px;
+    
+        @media (max-width: 903px) {
+            width: 90%;
+            margin: 40px auto;
+        }
+    
+        @media (max-width: 699px) {
+            font-size: 1rem;
+            line-height: 40px;
+        }
+    }
+
+    #finalTextoInternoNosotrosWhite{
+
+        @media (min-width: 904px) and (max-width: 1090px) {
+            padding-bottom: 150px;
+        }
+
+        @media (max-width: 903px) {
+            padding-bottom: 190px;
+        }
+    }
+}
+
+//PÁGINA DE PLANES------------------------------------------
+#bodyPlanes{
+    background-image: url("../assets/img/backgrounds/BG-Tienda.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: 662px) {
+        background-image: url("../assets/img/backgrounds/BG-planes-mobile.png");
+    }
+    
+    #planes{
+        width: 100%;
+        height: fit-content;
+    
+        h1{
+            color: $azulIntenso;
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            font-family: "creato-display-regular";
+            line-height: 60px;
+            margin-top: 200px;
+    
+            @media (max-width: 699px) {
+                font-size: 2rem;
+                margin-top: 50px;
+            }
+        }
+        
+        #contenedorPlanesCards{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin: 50px;
+
+            @media (max-width: 662px) {
+                margin: 20px;
+            }
+            
+            .planesCards{
+                width: 500px;
+                height: 650px;
+                -webkit-filter: drop-shadow(0px 30px 40px rgba(212, 217, 232, 0.7));
+                filter: drop-shadow(0px 30px 40px rgba(212, 217, 232, 0.7));
+                border-radius: 8px;
+                margin: 30px;
+    
+                h2{
+                    color: white;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    font-family: "creato-display-regular";
+                    margin: 30px;
+
+                    @media (max-width: 662px) {
+                        font-size: 1.5rem;
+                        margin: 20px;
+                    }
+                }
+
+                h3{
+                    color: white;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    font-family: "creato-display-regular";
+                    margin: 30px;
+
+                    @media (max-width: 662px) {
+                        margin: 20px;
+                    }
+                }
+    
+                p{
+                    color: white;
+                    font-size: 0.8rem;
+                    font-weight: normal;
+                    font-family: "creato-display-regular";
+                    line-height: 32px;
+                    margin: 30px;
+
+                    @media (max-width: 662px) {
+                        font-size: 0.7rem;
+                        line-height: 24px;
+                        margin: 20px;
+                    }
+                }
+
+                .linkPago{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin: 1em;
+                }
+
+                a{
+                    text-decoration: none;
+                    text-align: center;
+                    color: $azulIntenso;
+                    font-family: "creato-display-regular";
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    background-color: $amarillo;
+                    padding: 12px 32px;
+                    margin: 15px 0px;
+                    border: solid 1px $amarillo;
+                    border-radius: 6px;
+
+                    @media (max-width: 662px) {
+                        font-size: 0.8rem;
+                        padding: 8px 24px;
+                    }
+                }
+
+                @media (max-width: 662px) {
+                    width: 100%;
+                    height: 660px;
+                    margin: 10px;
+                }
+            }
+            #plan1{
+                background: linear-gradient(180deg, #0C6E9A 2.25%, rgba(12, 110, 154, 0.74) 50%), url("../assets/imagenes/plan1.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+
+            }
+
+            #plan2{
+                background: linear-gradient(180deg, #0C6E9A 2.25%, rgba(12, 110, 154, 0.74) 50%), url("../assets/imagenes/plan2.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #plan3{
+                background: linear-gradient(180deg, #0C6E9A 2.25%, rgba(12, 110, 154, 0.74) 50%), url("../assets/imagenes/plan3.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: center;
+            }
+
+            #plan4{
+                background: linear-gradient(180deg, #0C6E9A 2.25%, rgba(12, 110, 154, 0.74) 50%), url("../assets/imagenes/plan4.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #plan5{
+                background: linear-gradient(180deg, #0C6E9A 2.25%, rgba(12, 110, 154, 0.74) 50%), url("../assets/imagenes/plan5.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: center;
+            }
+
+            #plan6{
+                background: linear-gradient(180deg, #0C6E9A 2.25%, rgba(12, 110, 154, 0.74) 50%), url("../assets/imagenes/plan6.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: center;
+
+                @media (max-width: 662px) {
+                    background-position-x: left;
+                }
+            }
+
+            #plan7{
+                background: linear-gradient(180deg, #0C6E9A 2.25%, rgba(12, 110, 154, 0.74) 50%), url("../assets/imagenes/plan7.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: center;
+
+                @media (max-width: 662px) {
+                    background-position-x: left;
+                }
+            }
+
+            #plan8{
+                background: linear-gradient(180deg, #0C6E9A 2.25%, rgba(12, 110, 154, 0.74) 50%), url("../assets/imagenes/plan8.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: center;
+
+            }
+
+            #plan9{
+                background: linear-gradient(180deg, #0C6E9A 2.25%, rgba(12, 110, 154, 0.74) 50%), url("../assets/imagenes/plan9.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: center;
+
+            }
+        }
+    }
+}
