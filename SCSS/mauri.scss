@@ -529,13 +529,13 @@ $azulMarino: #0C6E9A;
                     }
                 }
 
-                .linkPago{
+                /* .linkPago{
                     display: flex;
                     flex-direction: row;
                     justify-content: flex-end;
                     align-items: center;
                     margin: 1em;
-                }
+                } */
 
                 a{
                     text-decoration: none;
@@ -549,6 +549,9 @@ $azulMarino: #0C6E9A;
                     margin: 15px 0px;
                     border: solid 1px $amarillo;
                     border-radius: 6px;
+                    position: absolute;
+                    bottom: 5px;
+                    right: 5px;
 
                     @media (max-width: 662px) {
                         font-size: 0.8rem;

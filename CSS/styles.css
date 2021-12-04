@@ -392,7 +392,14 @@
         -webkit-filter: drop-shadow(0px 30px 40px rgba(212, 217, 232, 0.7));
         filter: drop-shadow(0px 30px 40px rgba(212, 217, 232, 0.7));
         border-radius: 8px;
-        margin: 30px; }
+        margin: 30px;
+        /* .linkPago{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin: 1em;
+                } */ }
         #bodyPlanes #planes #contenedorPlanesCards .planesCards h2 {
           color: white;
           font-size: 2rem;
@@ -424,12 +431,6 @@
               font-size: 0.7rem;
               line-height: 24px;
               margin: 20px; } }
-        #bodyPlanes #planes #contenedorPlanesCards .planesCards .linkPago {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
-          align-items: center;
-          margin: 1em; }
         #bodyPlanes #planes #contenedorPlanesCards .planesCards a {
           text-decoration: none;
           text-align: center;
@@ -441,7 +442,10 @@
           padding: 12px 32px;
           margin: 15px 0px;
           border: solid 1px #FCC658;
-          border-radius: 6px; }
+          border-radius: 6px;
+          position: absolute;
+          bottom: 5px;
+          right: 5px; }
           @media (max-width: 662px) {
             #bodyPlanes #planes #contenedorPlanesCards .planesCards a {
               font-size: 0.8rem;
