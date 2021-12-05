@@ -512,8 +512,11 @@
     height: 80px; }
     @media (max-width: 700px) {
       #contenedorHeader #logoNav {
-        width: 75px;
-        height: 40px; } }
+        width: 110px;
+        height: 60px; } }
+    @media (max-width: 370px) {
+      #contenedorHeader #logoNav {
+        margin-top: -14px; } }
   #contenedorHeader #navbarSupportedContent {
     position: absolute;
     right: 0px; }
